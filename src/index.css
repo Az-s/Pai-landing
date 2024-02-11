@@ -27,10 +27,22 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+
+  scrollbar-color: transparent transparent; 
+}
+
+body::-webkit-scrollbar {
+  width: 8px; /* ширина скроллбара */
+}
+
+body::-webkit-scrollbar-track {
+  background-color: transparent; /* прозрачный фон трека */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: transparent; /* прозрачный фон ползунка */
 }
 
 h1 {
@@ -45,7 +57,6 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  /* background-color: #1a1a1a; */
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -55,17 +66,4 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }

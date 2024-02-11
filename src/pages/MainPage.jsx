@@ -7,7 +7,7 @@ import Footer from "../components/Footer"
 
 const MainPage = () => {
   return (
-    <div>
+    <div className="w-full flex flex-col justify-center items-center">
         <Main />
         <FirstBlock />
         <SecondBlock />

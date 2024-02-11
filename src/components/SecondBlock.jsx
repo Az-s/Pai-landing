@@ -2,7 +2,7 @@ import { thirdBlockCardsInfo } from "../utilities/constants";
 
 const SecondBlock = () => {
   return (
-    <div className="bg-[#FF4432] w-full h-[712px] flex flex-col items-center">
+    <div className="bg-[#FF4432] w-full h-[712px] flex flex-col items-center" style={{ backgroundColor: '#FF4432' }}>
       <div className="pt-[160px]">
         <div>
           <h3 className="text-[48px] font-bold text-white">
@@ -19,14 +19,14 @@ const SecondBlock = () => {
               className="w-[328px] h-[193px] bg-white rounded-3xl p-8 text-left"
             >
               <img src={card.icon} alt="" />
-              <p>
+              <p className="text-[18px]">
                 {" "}
                 {card.description.split(" ").map((word, index) => (
                   <span
                     key={index}
                     className={
                       word.includes("%")
-                        ? "text-[#FF4432] text-[24px] font-semibold"
+                        ? "text-[#FF4432] text-[24px] font-bold"
                         : "text-[#8A898E]"
                     }
                   >
