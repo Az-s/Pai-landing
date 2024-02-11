@@ -1,10 +1,10 @@
 const Footer = () => {
   return (
-    <div>
-      <h5>С любовью к заведениям</h5>
-      <div>
+    <div className="flex flex-col justify-center items-center">
+      <h5 className="font-bold text-[48px]">С любовью к заведениям</h5>
+      <div className="text-[#8A898E] text-[24px] w-[800px]">
         <p>
-          Мы в Pai - команда энтузиастов, которых объединяет страсть к еде и
+          Мы в <span className="text-[#FF4432]">Pai</span> - команда энтузиастов, которых объединяет страсть к еде и
           технологиям.
         </p>
         <p>
@@ -13,11 +13,11 @@ const Footer = () => {
         </p>
         <p>
           Пока мы не убедимся в эффективности нашего продукта, его стоимость
-          будет равна 0 сом. Комиссия взимается только за услуги эквайринг
+          будет равна <span className="text-[#FF4432]">0 сом</span>. Комиссия взимается только за услуги эквайринг
           партнера в установленном размере.
         </p>
       </div>
-      <div>
+      <div className="flex w-full items-center justify-around text-[#8A898E] text-[16px]">
         <p>2024</p>
         <p>Пользовательское соглашение</p>
         <p>Политика конфиденциальности</p>

@@ -2,18 +2,41 @@ import { thirdBlockCardsInfo } from "../utilities/constants";
 
 const SecondBlock = () => {
   return (
-    <div>
-      <div>
-        <h3>Насколько наш метод оплаты лучше?</h3>
-        <p>Дайте гостям оплатить их заказ самостоятельно</p>
-      </div>
-      <div>
-        {thirdBlockCardsInfo.map((card) => (
-          <div key={card.description}>
-            <img src={card.icon} alt="" />
-            <p>{card.description}</p>
-          </div>
-        ))}
+    <div className="bg-[#FF4432] w-full h-[712px] flex flex-col items-center">
+      <div className="pt-[160px]">
+        <div>
+          <h3 className="text-[48px] font-bold text-white">
+            Насколько наш метод оплаты лучше?
+          </h3>
+          <p className="text-[24px] text-white mt-[32px]">
+            Дайте гостям оплатить их заказ самостоятельно
+          </p>
+        </div>
+        <div className="flex items-center justify-center gap-6 mt-[80px]">
+          {thirdBlockCardsInfo.map((card) => (
+            <div
+              key={card.description}
+              className="w-[328px] h-[193px] bg-white rounded-3xl p-8 text-left"
+            >
+              <img src={card.icon} alt="" />
+              <p>
+                {" "}
+                {card.description.split(" ").map((word, index) => (
+                  <span
+                    key={index}
+                    className={
+                      word.includes("%")
+                        ? "text-[#FF4432] text-[24px] font-semibold"
+                        : "text-[#8A898E]"
+                    }
+                  >
+                    {word}{" "}
+                  </span>
+                ))}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
