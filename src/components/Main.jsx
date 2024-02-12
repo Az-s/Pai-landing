@@ -4,24 +4,24 @@ import { firstBlockCardsInfo } from "../utilities/constants";
 
 const Main = () => {
   return (
-    <div className="flex flex-col l mb-[160px] w-full items-center">
-      <div className="w-[1280px]">
-        <div className="flex items-center justify-between h-[64px] mt-[32px]">
+    <div className="flex flex-col mb-[160px] w-full items-center">
+      <div className="max-w-[1280px]">
+        <div className="flex items-center justify-between h-[64px] mt-[32px] mx-3 sm:mx-0">
           <img src={Logo} alt="Logo Pai" />
           <button className="text-[20px] bg-[#E9E9E9]">Участвовать</button>
         </div>
-        <div className="flex items-center justify-between">
-          <div className="w-1/2">
+        <div className="flex items-center justify-between mx-3 sm:mx-0">
+          <div className="sm:w-1/2">
             <div className="text-left mt-[64px] mb-[56px]">
-              <h1 className="text-[48px] font-bold">
+              <h1 className="text-[32px] sm:text-[48px] font-bold">
                 Сервис оплаты счета и начисления бонусов без потери времени
               </h1>
-              <p className="mt-[32px] text-[24px] text-[#8A898E]">
+              <p className="mt-[32px] text-[18px] sm:text-[24px] text-[#8A898E]">
                 Освободите время персонала и дайте гостям самостоятельно
                 оплатить счет и получить бонусы
               </p>
             </div>
-            <div className="flex flex-wrap gap-6">
+            <div   className="flex flex-wrap gap-6">
               <div className="border-[2px] border-[#E9E9E9] rounded-3xl w-[260px] h-[156px] flex flex-col p-4 text-left">
                 <p className="text-[40px] text-[#FF4432] font-semibold">
                   0 сом
@@ -43,7 +43,7 @@ const Main = () => {
               ))}
             </div>
           </div>
-          <div className="h-[684px] w-1/2">
+          <div className="h-[684px] sm:w-1/2 hidden sm:block">
             <img src={FirstBlockImg} alt="Phone image" />
           </div>
         </div>
