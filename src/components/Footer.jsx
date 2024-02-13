@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
-    <div className="flex flex-col justify-center items-center">
-      <h5 className="font-bold text-[32px] sm:text-[48px] mt-16 md:mt-32">
+    <div className="flex flex-col justify-center items-center px-[16px]">
+      <h5 className="font-bold text-[32px] sm:text-[48px] mt-16 md:mt-32 leading-[38px]">
         С любовью к заведениям
       </h5>
       <div className="text-gray-500 sm:text-[32px] text-[18px] md:w-4/5 lg:w-3/4 xl:w-2/3 mb-16 mt-4 md:mt-8">
@@ -20,9 +20,9 @@ const Footer = () => {
         </p>
       </div>
       <div className="flex flex-col md:flex-row w-full items-center justify-around text-gray-500 text-sm pb-8 md:pb-20">
-        <p>2024</p>
-        <p className="mt-4 md:mt-0">Пользовательское соглашение</p>
-        <p className="mt-4 md:mt-0">Политика конфиденциальности</p>
+        <p>2023</p>
+        <a href="https://ducks-begin-5fj.craft.me/yQUruXbc0ozN3O" className="mt-4 md:mt-0">Пользовательское соглашение</a>
+        <a href="https://ducks-begin-5fj.craft.me/s9xKrjL3187lTd" className="mt-4 md:mt-0">Политика конфиденциальности</a>
       </div>
     </div>
   );

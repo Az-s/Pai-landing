@@ -3,7 +3,7 @@ import { thirdBlockCardsInfo } from "../utilities/constants";
 const SecondBlock = () => {
   return (
     <div className="bg-[#FF4432] w-full h-[712px] flex flex-col items-center hidden md:block" style={{ backgroundColor: '#FF4432' }}>
-      <div className="pt-[160px]">
+      <div className="pt-[80px] sm:pt-[160px]">
         <div>
           <h3 className="text-[48px] font-bold text-white">
             Насколько наш метод оплаты лучше?
