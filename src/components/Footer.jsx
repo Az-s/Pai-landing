@@ -4,7 +4,7 @@ const Footer = () => {
       <h5 className="font-bold text-[32px] sm:text-[48px] mt-16 md:mt-32 leading-[38px]">
         С любовью к заведениям
       </h5>
-      <div className="text-gray-500 sm:text-[32px] text-[18px] md:w-4/5 lg:w-3/4 xl:w-2/3 mb-16 mt-4 md:mt-8">
+      <div className="text-gray-500 sm:text-[24px] text-[18px] md:w-4/5 lg:w-3/4 xl:w-2/3 mb-16 mt-4 md:mt-8">
         <p>
           Мы в <span className="text-red-500">Pai</span> - команда энтузиастов,
           которых объединяет страсть к еде и технологиям.
