@@ -5,7 +5,7 @@ import { firstBlockCardsInfo } from "../utilities/constants";
 const Main = () => {
   return (
     <div className="flex flex-col mb-[80px] sm:mb-[160px] w-full sm:items-center">
-      <div className="max-w-[1280px]">
+      <div className="max-w-[1032px]">
         <div className="flex items-center justify-between h-[64px] mt-[32px] mx-4 sm:mx-0">
           <img src={Logo} alt="Logo Pai" />
           <button className="text-[16px] sm:text-[20px] bg-[#E9E9E9] rounded-2xl">
@@ -18,7 +18,7 @@ const Main = () => {
           </button>
         </div>
         <div className="flex items-center justify-between">
-          <div className="w-full sm:w-1/2">
+          <div className="w-full sm:w-[60%]">
             <div className="text-left mt-[64px] mb-[56px] mx-4 sm:mx-0">
               <h1 className="text-[32px] sm:text-[48px] font-bold">
                 Сервис оплаты счета и начисления бонусов без потери времени
@@ -50,9 +50,7 @@ const Main = () => {
               ))}
             </div>
           </div>
-          <div className="h-[684px] sm:w-1/2 hidden sm:block  mt-[64px]">
-            <img src={FirstBlockImg} alt="Phone image" className="object-contain"/>
-          </div>
+            <img src={FirstBlockImg} alt="Phone image" className="h-[684px] hidden sm:block  mt-[64px] absolute sm:right-[-190px] md:right-[-250px] lg:right-[-165px] xl:right-[200px]"/>
         </div>
       </div>
     </div>

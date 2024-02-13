@@ -6,7 +6,7 @@ import { secondBlockCardsInfo } from "../utilities/constants";
 const FirstBlock = () => {
   return (
     <div className="bg-black text-white py-[80px] sm:py-[160px] w-full  flex flex-col items-center">
-      <div className="max-w-[1280px]">
+      <div className="max-w-[1032px]">
         <div>
           <h2 className="text-[32px] sm:text-[48px] font-bold">Как работает оплата с нами?</h2>
           <p className="pt-[32px] text-[18px] sm:text-[24px] text-[#8A898E] mb-[80px]">
@@ -19,7 +19,7 @@ const FirstBlock = () => {
           </div>
           <div className="sm:w-1/2 order-1 sm:order-2">
             <h5 className="text-[28px] sm:text-[40px] font-semibold">Оплата заказа</h5>
-            <p className="text-[16px] sm:text-[18px] text-[#8A898E]">
+            <p className="text-[16px] sm:text-[18px] text-[#8A898E]"> 
               Гостем через NFC метку с деталями и суммой заказа
             </p>
           </div>
